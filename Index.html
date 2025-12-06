@@ -1,1 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Abhay 10th Batch 2026</title>
 
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: #121212;
+        color: white;
+    }
+
+    .container {
+        width: 92%;
+        margin: auto;
+        padding-top: 20px;
+    }
+
+    .card {
+        background: #1e1e1e;
+        padding: 20px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        border: 1px solid #333;
+    }
+
+    .card-title {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .course-img {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        background: #8b5cf6;
+        color: white;
+        text-align: center;
+        padding: 18px;
+        border-radius: 15px;
+        font-size: 20px;
+        margin-top: 25px;
+        text-decoration: none;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    /* Hidden study section */
+    #study-options {
+        display: none;
+        margin-top: 30px;
+    }
+
+    .option {
+        background: #1e1e1e;
+        padding: 18px;
+        border-radius: 12px;
+        margin-bottom: 15px;
+        font-size: 18px;
+        text-align: center;
+        border: 1px solid #333;
+    }
+</style>
+
+<script>
+    function openStudy() {
+        document.getElementById("main-card").style.display = "none";
+        document.getElementById("study-options").style.display = "block";
+    }
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- MAIN CARD -->
+    <div class="card" id="main-card">
+        <div class="card-title">Abhay 10th Batch 2026</div>
+
+        <img src="https://via.placeholder.com/800x450.png?text=Course+Thumbnail"
+             class="course-img" alt="Batch Image">
+
+        <a onclick="openStudy()" class="btn">Let's Study</a>
+    </div>
+
+    <!-- STUDY OPTIONS -->
+    <div id="study-options">
+        <div class="option">📡 Live Classes</div>
+        <div class="option">🎥 Video Lectures</div>
+        <div class="option">📄 Notes</div>
+        <div class="option">📝 DPP</div>
+    </div>
+
+</div>
+
+</body>
+</html>
